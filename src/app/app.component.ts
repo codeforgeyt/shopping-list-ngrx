@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'shopping-list-no-ngrx';
+  title = 'shopping-list-ngrx-demo';
 }

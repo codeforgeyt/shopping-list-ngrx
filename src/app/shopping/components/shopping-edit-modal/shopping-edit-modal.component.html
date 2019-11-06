@@ -1,0 +1,17 @@
+<h2 class="mat-h2">Edit shopping item</h2>
+
+<form (ngSubmit)="editShoppingItem()">
+    <mat-form-field class="full-width-input">
+        <input matInput placeholder="Name" name="name" [(ngModel)]="shoppingItemBeingEdited.name" required>
+    </mat-form-field>
+
+    <mat-form-field class="full-width-input">
+        <input matInput type="number" placeholder="Quantity" name="Qunatity"
+            [(ngModel)]="shoppingItemBeingEdited.quantity" required>
+    </mat-form-field>
+
+    <div class="button-wrapper">
+        <button mat-stroked-button type="button" color="accent" (click)="closeDialog()">Cancel</button>
+        <button mat-flat-button type="submit" color="primary">Edit</button>
+    </div>
+</form>
